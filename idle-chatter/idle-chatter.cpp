@@ -13,7 +13,7 @@ extern "C"
 			{
 				CharObj2* player = GetCharObj2(i);
 
-				if (player != nullptr)
+				if (player != nullptr && !EV_MainThread_ptr)
 					player->IdleTime = 0x7FFF;
 			}
 		}
