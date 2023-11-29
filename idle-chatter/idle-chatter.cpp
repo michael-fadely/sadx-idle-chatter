@@ -9,7 +9,7 @@ extern "C"
 	{
 		for (uint8_t i = 0; i < pMax; i++)
 		{
-			if (ControllerPointers[i]->PressedButtons & Buttons_Z)
+			if (Controllers[i].PressedButtons & Buttons_Z)
 			{
 				CharObj2* player = GetCharObj2(i);
 
